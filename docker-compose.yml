@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  web:
+    image: php:7.2.2-apache
+    container_name: php_web
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - "8888:80"
+    depends_on: 
+      - composer
+
+  composer:
+    image: composer:latest
+    command: ["composer", "install"]
+    volumes:
+      - ./:/app
