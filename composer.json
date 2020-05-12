@@ -1,0 +1,13 @@
+{
+    "name": "ApiTest",
+    "description": "Apt Test to handle SWAPI",
+    "autoload": {
+        "psr-4":{
+            "ApiTest\\":"src/apiTest"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5",
+        "vlucas/phpdotenv": "^4.1"
+    }
+}
