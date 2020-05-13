@@ -8,6 +8,7 @@
     },
     "require": {
         "guzzlehttp/guzzle": "^6.5",
-        "vlucas/phpdotenv": "^4.1"
+        "vlucas/phpdotenv": "^4.1",
+        "monolog/monolog": "^2.0"
     }
 }
